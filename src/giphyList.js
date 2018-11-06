@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export default class GiphyList extends React.Component{
+export default class GiphyList extends React.Component {
 
    renderListElmnt(giphyElmnt){
 
