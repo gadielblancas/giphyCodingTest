@@ -1,0 +1,42 @@
+.gif-cell{
+  padding: 20px !important;
+}
+.search-conteiner{
+ padding: 30px;
+}
+
+.results-container{
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  font-size: 25px;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fast {
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
