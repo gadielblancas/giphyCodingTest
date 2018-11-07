@@ -27,7 +27,7 @@ export default class GiphyList extends React.Component {
          title = <div className="results-container">Results:</div>;
          display = this.props.giphydata.map( this.renderListElmnt );
        }else{
-         title = <div className="results-container">search for something  typing on the input</div>;
+         title = <div className="results-container">search for something</div>;
          display = '';
        }
 
