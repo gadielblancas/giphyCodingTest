@@ -43,7 +43,7 @@ class App extends Component {
              <div className="search-conteiner">
                   <input className="form-control"
                   onChange={ (event) => this.getGifs(event) }
-                  placeholder="search for gifs"
+                  placeholder="search for a gif"
                   type="text"></input>
              </div>
 
