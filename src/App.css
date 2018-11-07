@@ -40,3 +40,11 @@
 .fadeIn {
   animation-name: fadeIn;
 }
+.image-container{
+
+  position: relative;
+}
+.image-thumb{
+
+  max-height: 300px;
+}

@@ -1,15 +1,20 @@
 import React from 'react';
+import GifElement from './giphElement';
 
 
 export default class GiphyList extends React.Component {
 
+  constructor(props) {
+    super(props);
+
+    this.renderListElmnt = this.renderListElmnt.bind(this);
+
+   }
+
+
    renderListElmnt(giphyElmnt){
 
-     return(
-        <div key={giphyElmnt.id} className="embed-responsive embed-responsive-16by9 col-sm-4 col-md-4 col-xl-4 animated fadeIn fast">
-         <iframe src={giphyElmnt.embed_url} width="480" height="270" frameBorder="0" className="giphy-embed embed-responsive-item gif-cell" allowFullScreen></iframe>
-        </div>
-     );
+     return <GifElement dataElmnt= {giphyElmnt} />
 
    }
 
@@ -28,8 +33,8 @@ export default class GiphyList extends React.Component {
 
        return(
         <div className="row">
-          {title}
-          {display}
+             {title}
+             {display}
         </div>
 
        );

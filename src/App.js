@@ -7,7 +7,7 @@ class App extends Component {
     //api key
     apiKey = 'CxRm9K3L2LmjbhLSFWFZa18pSvL6ZeMU';
     //building end point
-    url = `http://api.giphy.com/v1/gifs/search?api_key=${this.apiKey}&limit=6&q=ryan+gosling`;
+    url = `http://api.giphy.com/v1/gifs/search?api_key=${this.apiKey}&limit=12&q=ryan+gosling`;
 
     state = {
       data:[]
@@ -34,6 +34,7 @@ class App extends Component {
       });
 
     }
+
     render() {
         console.log(this.state.data);
 
