@@ -2,43 +2,18 @@ import React from 'react';
 import GifElement from './giphElement';
 
 
-export default class GiphyList extends React.Component {
+export default function GiphyList(props) {
 
-  constructor(props) {
-    super(props);
+    let  display = props.giphydata.map( renderListElmnt );
 
-    this.renderListElmnt = this.renderListElmnt.bind(this);
-
-   }
-
-
-   renderListElmnt(giphyElmnt){
-
-     return <GifElement dataElmnt= {giphyElmnt} />
-
-   }
-
-   render(){
-
-       let display;
-       let title;
-
-       if(this.props.giphydata.length ){
-         title = <div className="results-container">Results:</div>;
-         display = this.props.giphydata.map( this.renderListElmnt );
-       }else{
-         title = <div className="results-container">search for something</div>;
-         display = '';
-       }
-
-       return(
+    return(
         <div className="row">
-             {title}
              {display}
         </div>
 
-       );
-   }
+    );
+}
 
-
+function renderListElmnt(giphyElmnt){
+     return <GifElement dataElmnt= {giphyElmnt} />
 }
