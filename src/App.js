@@ -39,14 +39,14 @@ class App extends Component {
         console.log(this.state.data);
 
         return (
-          <div className="container-fluid">
+          <div className="container">
              <div className="search-conteiner">
                   <input className="form-control"
                   onChange={ (event) => this.getGifs(event) }
                   placeholder="search for a gif"
                   type="text"></input>
              </div>
-              <div className="container-fluid">
+              <div className="container">
                   <div className="row">
                        <div className="results-container">{this.state.data.length > 0? 'Results:':'search for something' }</div>
                        { this.state.data.length > 0?  <GiphyList giphydata={this.state.data}/> : null}
